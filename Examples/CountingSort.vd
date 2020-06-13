@@ -1,0 +1,45 @@
+A <- [3, 1, 4, 0, 2, 8, 2, 7, 3, 1, 5, 9, 2, 8, 6, 0, 0, 0, 0, 0, 0]
+B <- [0] * 10
+# C <- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+PRINT B
+
+I <- 0
+
+PRINT A
+
+WHILE I < LENGTH A DO
+
+      B[A[I]] = B[A[I]] + 1
+
+      I = I + 1
+
+ENDWHILE
+
+PRINT B
+
+I = 0
+J <- 0
+K <- 0
+
+WHILE I < LENGTH B DO
+
+      J = 0
+
+      WHILE J < B[I] DO
+
+      	    A[K] = I
+	    # C[K] = I
+
+      	    K = K + 1
+
+      	    J = J + 1
+
+      ENDWHILE
+
+      I = I + 1 
+
+ENDWHILE
+
+PRINT A
+# PRINT C

@@ -1,0 +1,54 @@
+CBool(val) <-
+
+    IF INT val == 0 THEN
+        RETURN FALSE
+    ELSE
+        RETURN TRUE
+    ENDIF
+
+->
+
+# This function simply returns the number you gave it plus one
+SimpleFunc(X) <-
+    RETURN X + 1
+->
+
+PRINT SimpleFunc(0)
+PRINT SimpleFunc(1)
+PRINT SimpleFunc(2)
+
+# This function prints the number you gave it plus one
+SimplePrintFunc(X) <-
+    PRINT X + 1
+->
+
+CALL SimplePrintFunc(0)
+CALL SimplePrintFunc(1)
+CALL SimplePrintFunc(2)
+
+#PRINT INT "-1"
+PRINT CBool(0)
+PRINT CBool(0.0)
+PRINT CBool("0")
+PRINT CBool(1)
+PRINT CBool(1.0)
+PRINT CBool("1")
+PRINT CBool(3412214)
+PRINT CBool(2435.23340)
+#PRINT CBool("-12345667")
+PRINT CBool(-3412214)
+PRINT CBool(-2435.23340)
+
+PRINT CBool(0) && CBool(0)
+
+#X <- 0
+#PRINT X
+#FUNC1(Y) <- PRINT Y X = Y PRINT X ->
+#PRINT FUNC1(2)
+#PRINT X
+#PRINT FUNC1(2 * 3 + 2)
+#PRINT X
+
+Greeting(First, Last) <- PRINT "Hello " + First + " of house " + Last ->
+CALL Greeting("Sam", "Howard")
+CALL Greeting("Kay", "Ford")

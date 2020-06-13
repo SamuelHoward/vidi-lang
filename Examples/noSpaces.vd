@@ -1,0 +1,4 @@
+A<-1
+PRINT A
+A=2
+PRINT A

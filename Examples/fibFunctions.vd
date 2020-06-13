@@ -1,0 +1,41 @@
+
+# This is a recursive implementation of fibonacci
+Fib(N) <-
+    
+    IF N == 0 THEN
+
+        # Fib(0) = 0
+        RETURN 0
+	
+	
+    ELSE
+    
+        IF N == 1 THEN
+
+            # Fib(1) = 1
+	    RETURN 1
+	    
+	    
+	ELSE
+
+            # Fib(n) = Fib(n - 1) + Fib(n - 1)
+	    RETURN Fib(N - 1) + Fib(N - 2)
+	    
+	ENDIF
+	
+    ENDIF
+    
+->
+
+PRINT Fib(0)
+PRINT Fib(1)
+PRINT Fib(6)
+
+#I <- 0
+
+#IF LENGTH ARGV > 1 THEN
+#    WHILE I <= INT ARGV[1] DO
+#        PRINT Fib(I)
+#	I = I + 1
+#    ENDWHILE
+#ENDIF

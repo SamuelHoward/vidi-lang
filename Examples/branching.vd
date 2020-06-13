@@ -1,0 +1,11 @@
+A <- 3
+
+IF A == 0 THEN
+    PRINT "ZERO"
+ELSE
+    IF A == 3 THEN
+        PRINT "THREE"
+    ELSE
+	PRINT "OTHER"
+    ENDIF
+ENDIF

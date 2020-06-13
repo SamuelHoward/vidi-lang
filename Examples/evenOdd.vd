@@ -1,0 +1,19 @@
+I <- -30
+
+WHILE I < 31 DO
+
+      PRINT I
+
+      IF I % 2 == 0 THEN
+
+            PRINT "is even"
+
+      ELSE
+
+            PRINT "is odd"
+
+      ENDIF
+
+      I = I + 1
+
+ENDWHILE

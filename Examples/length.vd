@@ -1,0 +1,4 @@
+A <- [1, 0, 1, 0, TRUE, [], [1, 0]]
+PRINT LENGTH A
+PRINT LENGTH A[5]
+PRINT LENGTH A[6]

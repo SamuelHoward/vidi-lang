@@ -1,0 +1,81 @@
+
+# This is an iterative implementation of fibonacci
+FibIterative(N) <-
+
+    # The zeroth and first numbers in the fibonacci sequence are 0 and 1
+    IF N == 0 || N == 1 THEN
+
+        RETURN N
+
+    ELSE
+    
+        # Initialize local variables for last two fibonacci numbers,
+	# current fibonacci number, and index
+        A <- 0
+    	B <- 1
+	C <- A + B
+    	I <- 2
+
+        # Update the local variables until the Nth fibonacci number is found
+    	WHILE I < N DO
+
+            A = B
+	    B = C
+	    C = A + B
+
+	    I = I + 1
+
+	ENDWHILE
+
+        RETURN C
+
+    ENDIF
+
+->
+
+PRINT FibIterative(0)
+PRINT FibIterative(1)
+PRINT FibIterative(12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# This is a recursive implementation of fibonacci
+FibRecursive(N) <-
+
+    IF N == 0 THEN
+
+        # Fib(0) = 0
+	RETURN 0
+
+    ELSE
+
+        IF N == 1 THEN
+
+            # Fib(1) = 1
+	    RETURN 1
+
+        ELSE
+
+            # Fib(n) = Fib(n - 1) + Fib(n - 1)
+	    RETURN FibRecursive(N - 1) + FibRecursive(N - 2)
+
+        ENDIF
+
+    ENDIF
+
+->
+
+PRINT FibRecursive(0)
+PRINT FibRecursive(1)
+PRINT FibRecursive(12)
+

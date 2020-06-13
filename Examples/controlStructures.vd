@@ -1,0 +1,105 @@
+
+# This IF statement runs the first statement 
+
+IF TRUE THEN
+
+    PRINT "This branch was reached"
+
+ELSE
+
+    PRINT "This branch is not reached"
+
+ENDIF
+
+# This IF statement runs the second statement
+
+IF FALSE THEN
+
+    PRINT "Now this branch was not reached"
+
+ELSE
+
+    PRINT "Now this branch was reached"
+    
+ENDIF
+
+A <- INT ARGV[1]
+
+# This nested IF statement prints if A is positive, negative, or zero
+
+IF A == 0 THEN
+
+    PRINT "A is 0"
+    
+ELSE
+
+    # If A is not zero, it must be nonzero
+    
+    PRINT "A is nonzero"
+    
+    IF A < 0 THEN
+    
+        PRINT "A is negative"
+	
+    ELSE
+    
+	PRINT "A is postive"
+	
+    ENDIF
+    
+ENDIF
+
+# This WHILE statement prints integers 0 through 5
+
+I <- 0
+
+WHILE I <= 5 DO
+
+    PRINT I
+
+    I = I + 1
+
+ENDWHILE
+
+# This nested WHILE statement prints the product of X and Y
+# where X and Y are in the range [1,5]
+
+X <- 1
+Y <- 1
+
+WHILE X <= 5 DO
+
+    Y = 1
+
+    WHILE Y <= 5 DO
+
+        PRINT X * Y
+
+        Y = Y + 1
+
+    ENDWHILE
+
+    X = X + 1
+
+ENDWHILE
+
+# This WHILE statement uses and IF statement to print if integers
+# are even or odd in the range [0,7]
+
+J <- 0
+
+WHILE J < 8 DO
+
+      IF J % 2 == 0 THEN
+
+            PRINT STRING J + " is even"
+
+      ELSE
+
+            PRINT STRING J + " is odd"
+
+      ENDIF
+
+      J = J + 1
+
+ENDWHILE

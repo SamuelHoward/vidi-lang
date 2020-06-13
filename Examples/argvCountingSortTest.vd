@@ -1,0 +1,44 @@
+#  Create auxillary array for value counting and sorted array
+A <- LENGTH ARGV - 2
+B <- [0] * INT ARGV[1] + 1
+C <- [0] * A
+
+# Iterate through array and count how many occurences of each number there are
+
+I <- 0
+
+WHILE I < A DO
+
+    # Casting must be used to convert ARGV strings to integers
+ #       B[INT ARGV[I + 2]] = B[INT ARGV[I + 2]] + 1
+
+    I = I + 1
+PRINT A
+PRINT I
+ENDWHILE
+
+# Use array B to sort given numbers
+
+I = 0
+J <- 0
+K <- 0
+
+#WHILE I < LENGTH B DO
+
+    #J = 0
+
+    # Use value at B[I] to insert the number I, B[I] times into C
+
+ #   WHILE J < B[I] DO
+
+    #    C[K] = I
+#	        K = K + 1
+#		        J = J + 1
+
+  #  ENDWHILE
+
+   # I = I + 1
+
+#ENDWHILE
+
+#PRINT C

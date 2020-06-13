@@ -1,0 +1,29 @@
+# Reverse function returns the reverse of a given array
+Reverse(A) <-
+
+    # The reverse of an empty or singleton list is that same list
+    IF LENGTH A == 0 || LENGTH A == 1 THEN
+        RETURN A
+    ELSE
+        B <- [0] * LENGTH A
+	I <- 0
+	WHILE I < LENGTH A DO
+            B[LENGTH A - I + 1] = A[I]
+	    I = I + 1            
+        ENDWHILE
+        RETURN B
+    ENDIF
+
+->
+
+PRINT Reverse([])
+PRINT Reverse([1])
+PRINT Reverse([1,2])
+PRINT Reverse([1,2,3])
+C <- Reverse([TRUE,5.67,0,"dsgsdhs",3 + 6,TRUE && FALSE])
+PRINT C
+PRINT Reverse(C)
+D <- Reverse(C)
+PRINT D
+PRINT Reverse(Reverse(C))
+PRINT Reverse(Reverse(Reverse(C)))

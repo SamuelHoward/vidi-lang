@@ -1,0 +1,37 @@
+# String examples
+
+A <- "Hello World"
+
+PRINT A
+
+A = A + "Something else"
+
+PRINT A
+
+A = A + "Hello" + " " + "World"
+
+PRINT A
+
+#A = "These are qoutation marks \\" \\" \\" "
+
+PRINT A
+
+A = "Hello" * 3
+
+PRINT A
+
+A = "Hello" * 0
+
+PRINT A
+
+A = 3 * "Hello"
+
+PRINT A
+
+A = 0 * "Hello"
+
+PRINT A
+
+A = 3 * "Hello" * 3
+
+PRINT A

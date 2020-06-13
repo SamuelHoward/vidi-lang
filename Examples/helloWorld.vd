@@ -1,0 +1,28 @@
+
+# Print hello world using one string
+
+PRINT "hello world"
+
+# Print hello world using three strings
+
+PRINT "hello" + " " + "world"
+
+# Print hello world using one variable
+
+A <- "hello world"
+
+PRINT A
+
+# Print hello world using three variables
+
+X <- "hello"
+Y <- " "
+Z <- "world"
+
+PRINT X + Y + Z
+
+# Print hello world using a function call
+
+F(S) <- PRINT S ->
+
+CALL F("hello world")

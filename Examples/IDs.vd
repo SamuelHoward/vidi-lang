@@ -1,0 +1,5 @@
+A <- "hytgtf"
+#PRINT 2 + 4
+PRINT A
+PRINT "qwerty"
+PRINT A

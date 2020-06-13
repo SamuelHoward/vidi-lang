@@ -1,0 +1,53 @@
+# A primer for the vidi programming language
+
+# <- comment with this symbol
+
+# Declare variables with arrow '<-'
+A <- 1
+B <- TRUE
+C <- FALSE
+
+# Assign declared variables new values with '='
+A = -1
+B = FALSE
+C = TRUE
+
+# Print values with 'PRINT'
+PRINT A
+PRINT 30
+
+# Perform actions based on conditionals with 'IF ... THEN ... ELSE... ENDIF'
+IF B THEN
+   PRINT C
+ELSE
+   IF C THEN
+      PRINT B
+   ELSE
+      PRINT FALSE
+   ENDIF
+ENDIF
+
+# Loop through commands using 'WHILE ... DO ... ENDWHILE'
+WHILE A < 30 DO
+      PRINT A
+      A = A + 1
+ENDWHILE
+
+# Do arithmetic operations like most languages
+D <- 0
+D = 1 + 1
+D = 2 - 1
+D = 2 * 10
+D = 6 / 2
+
+# Do boolean operations with usual operators
+E <- FALSE
+E = TRUE && FALSE
+E = TRUE || FALSE
+E = ! TRUE
+E = 1 == 2
+E = 1 != 2
+E = 1 < 2
+E = 1 > 1
+E = 1 <= 2
+E = 1 >= 1

@@ -1,0 +1,11 @@
+A(X,Y) <- RETURN X + Y PRINT X + Y->
+
+PRINT A(2,3)
+CALL A(2,3)
+
+#C(X) <- RETURN X ->
+#PRINT C("C C C C CCCCCCC")
+
+B(X,Y,Z) <- PRINT X + Y + Z RETURN X + Y + Z ->
+
+PRINT 20 * B(1,2.34,-0.6)

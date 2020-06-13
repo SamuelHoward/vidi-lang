@@ -1,0 +1,56 @@
+
+A <- [1, TRUE, "hello", 3.14]
+PRINT A
+A = [1]
+PRINT A
+A = []
+PRINT A
+A = [ [] ]
+PRINT A
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+PRINT A
+A = [5,2,3]
+PRINT A
+PRINT A[1]
+PRINT A
+A[0] = 1
+PRINT A[0]
+PRINT A
+PRINT 2
+
+A = A + [4, 5, 6]
+PRINT A
+A = A + []
+PRINT A
+B <- A[5]
+PRINT B
+C <- LENGTH A
+PRINT C
+
+A = A + []
+PRINT LENGTH A
+
+A = A + [TRUE, FALSE]
+PRINT LENGTH A
+
+A = A + [[]]
+PRINT LENGTH A
+
+PRINT [1 + 1, TRUE && FALSE, LENGTH A, A, C, B, C]
+PRINT LENGTH A + 0
+PRINT LENGTH A + 2
+
+D <- [10, 20, 30] + [40, 50, 60]
+PRINT D
+E <- [345, 672, 396]
+PRINT E == [345, 672, 396]
+PRINT E == [325, 672, 396]
+PRINT E != [345, 672, 396]
+PRINT E != [325, 672, 396]
+F <- [345,672,396]
+PRINT E == F
+PRINT E != F
+F[0] = 0
+PRINT E == F
+PRINT E != F
+PRINT [1] + [2] + [3,4,5] * 4

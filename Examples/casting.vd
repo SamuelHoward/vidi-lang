@@ -1,0 +1,7 @@
+PRINT "This is " + STRING TRUE + " and not " + STRING FALSE
+PRINT "This is " + STRING 1 + " and not " +  STRING -1
+PRINT "This is " + STRING 1.0 + " and not " + STRING -1.0
+PRINT "This is " + STRING "A" + " and not " +  STRING "B"
+PRINT FLOAT 1 - FLOAT 2
+PRINT FLOAT STRING 1.0 - FLOAT STRING 0.5
+PRINT FLOAT 3.14 + FLOAT 2.09
